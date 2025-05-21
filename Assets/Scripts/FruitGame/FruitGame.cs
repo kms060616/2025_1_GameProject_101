@@ -42,6 +42,7 @@ public class FruitGame : MonoBehaviour
 
         if (fruitTimer < 0 && fruitTimer > -2)
         {
+            CheckGameOver();
             SpawnNewFruit();
             fruitTimer = -3.0f;
         }
