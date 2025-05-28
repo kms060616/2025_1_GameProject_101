@@ -50,6 +50,7 @@ public class SimpleBallController : MonoBehaviour
     {
         if (!SimpleTurnManager.canPlay) return;
         if (SimpleTurnManager.anyBallMoving) return;
+
         if (IsMoving()) return;   //공이 움직이고 있으면 조작불가
         
         if (Input.GetMouseButtonDown(0))  //마우스 클릭 시작
